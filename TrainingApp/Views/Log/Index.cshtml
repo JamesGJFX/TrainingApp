@@ -1,0 +1,20 @@
+﻿@model IEnumerable<TrainingApp.Models.Log>
+
+@{
+    ViewBag.Title = "Log Page";
+}
+
+@*View Logs*@
+
+@foreach (var item in Model)
+{
+    <div>
+        @Html.DisplayFor(modelItem => item.Header)
+    </div>
+
+    <div>
+        Html.DisplayFor(modelItem => item.Review)
+    </div>
+}
+
+@Html.Partial("CreateLog", new TrainingApp.Models.Log());
