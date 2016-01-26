@@ -12,5 +12,13 @@ namespace TrainingApp.Models
         public string Review { get; set; }
         public string Workout { get; set; }
         public DateTime Date { get; set; }
+
+        public Log()
+        {
+            Header = "<Enter Header>";
+            Review = "<Enter Review>";
+            Workout = "<Enter Workout>";
+            Date = DateTime.Today.Date;
+        }
     }
 }

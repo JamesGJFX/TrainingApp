@@ -8,32 +8,28 @@
     <div class="log-record">
         @Html.ValidationSummary(true, "")
         <div class="log-record-header">
-            @Html.LabelFor(model => model.Header)
             <div>
-                @Html.EditorFor(model => model.Header)
+                @Html.EditorFor(model => model.Header, new { htmlAttributes = new { @class = "editor-log" } })
                 @Html.ValidationMessageFor(model => model.Header)
             </div>
         </div>
         <div>
             <div class="log-record-review">
-                @Html.LabelFor(model => model.Review)
                 <div>
-                    @Html.EditorFor(model => model.Review)
+                    @Html.EditorFor(model => model.Review, new { htmlAttributes = new { @class = "editor-log" } })
                     @Html.ValidationMessageFor(model => model.Review)
                 </div>
             </div>
 
             <div class="log-record-workout">
-                @Html.LabelFor(model => model.Workout)
                 <div>
-                    @Html.EditorFor(model => model.Workout)
+                    @Html.EditorFor(model => model.Workout, new { htmlAttributes = new { @class = "editor-log" } })
                     @Html.ValidationMessageFor(model => model.Workout)
                 </div>
 
                 <div class="log-record-date">
-                    @Html.LabelFor(model => model.Date)
                     <div>
-                        @Html.EditorFor(model => model.Date)
+                        @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "editor-log" } })
                         @Html.ValidationMessageFor(model => model.Date)
                     </div>
                 </div>
