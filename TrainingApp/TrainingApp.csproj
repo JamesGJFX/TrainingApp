@@ -181,6 +181,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\Delicious-Bold.otf" />
+    <Content Include="fonts\Delicious-BoldItalic.otf" />
+    <Content Include="fonts\Delicious-Heavy.otf" />
+    <Content Include="fonts\Delicious-Italic.otf" />
+    <Content Include="fonts\Delicious-Roman.otf" />
+    <Content Include="fonts\Delicious-SmallCaps.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
