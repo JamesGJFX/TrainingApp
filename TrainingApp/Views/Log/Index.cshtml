@@ -9,11 +9,13 @@
 @foreach (var item in Model)
 {
     <div>
+        <em>Header</em>
         @Html.DisplayFor(modelItem => item.Header)
     </div>
 
     <div>
-        Html.DisplayFor(modelItem => item.Review)
+        <em>Review</em>
+        @Html.DisplayFor(modelItem => item.Review)
     </div>
 }
 
