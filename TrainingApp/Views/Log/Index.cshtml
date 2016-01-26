@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<TrainingApp.Models.Log>
+<link href="~/Content/Site.css" rel="stylesheet" />
 
 @{
     ViewBag.Title = "Log Page";
@@ -8,15 +9,20 @@
 
 @foreach (var item in Model)
 {
-    <div>
-        <em>Header</em>
-        @Html.DisplayFor(modelItem => item.Header)
-    </div>
-
-    <div>
-        <em>Review</em>
-        @Html.DisplayFor(modelItem => item.Review)
+    <div class="log-record">
+        <div class="log-record-header">
+            <em>Header</em>
+            @Html.DisplayFor(modelItem => item.Header)
+        </div>
+        <div class="log-record-review">
+            <em>Review</em>
+            @Html.DisplayFor(modelItem => item.Review)
+        </div>
+        <div class="log-record-workout">
+            <em>Workout</em>
+            @Html.DisplayFor(modelItem => item.Workout)
+        </div>
     </div>
 }
 
-@Html.Partial("CreateLog", new TrainingApp.Models.Log());
+@Html.Partial("CreateLog", new TrainingApp.Models.Log())
