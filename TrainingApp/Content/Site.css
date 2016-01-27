@@ -22,6 +22,6 @@ body                        { margin:0; padding:0;}
                               float:left; border-top-left-radius: 0; border-top-right-radius:0;
                               text-decoration:none; display:inline-block; color: white; border:none;}
 
-.editor-log          { float: left; border: none; width:60%; height: 50%; border-bottom:1px solid orange; font: 8px; background-color:transparent;}
+.editor-log                 { float: left; border: none; width:60%; height: 50%; border-bottom:1px solid orange; font: 8px; background-color:transparent;}
 
 textarea:focus, input:focus { outline:none; }
